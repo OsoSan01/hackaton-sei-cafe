@@ -26,6 +26,7 @@ export function checkout() {
   return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
 }
 
-export function getAll() {
-
+//retreive the order that comes from the checkout
+export function getAll(orderId) {
+  return sendRequest(`${BASE_URL}/orders`);
 }
